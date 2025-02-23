@@ -1,0 +1,210 @@
+/* src/components/InvoiceManagement/InvoiceManagement.css */
+.invoice-management-section {
+  background: #f8fafc;
+  min-height: 100vh;
+  width: 100%;
+  overflow-x: hidden;
+}
+
+.invoice-management {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 1rem;
+  background: white;
+  border-radius: 0.75rem;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.5rem;
+  padding: 0.5rem;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.header-title {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #1e293b;
+  margin: 0;
+}
+
+.header-subtitle {
+  color: #64748b;
+  margin: 0.25rem 0 0 0;
+  font-size: 0.875rem;
+}
+
+.button-group {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.new-invoice-button {
+  background: #25D366;
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 0.375rem;
+  cursor: pointer;
+  font-weight: 500;
+  transition: background 0.2s;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  white-space: nowrap;
+}
+
+.new-invoice-button:hover {
+  background: #128C7E;
+}
+
+.invoice-management-content {
+  width: 100%;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+.loading,
+.error {
+  text-align: center;
+  padding: 1.5rem;
+  background: white;
+  border-radius: 0.5rem;
+  border: 1px solid #e5e7eb;
+  margin: 1rem 0;
+}
+
+.error {
+  color: #dc2626;
+}
+
+.tutorial-button-wrapper {
+  margin-bottom: 1rem;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.tutorial-button {
+  background: #f3f4f6;
+  border: 1px solid #e5e7eb;
+  padding: 0.5rem 1rem;
+  border-radius: 0.375rem;
+  cursor: pointer;
+  font-size: 0.875rem;
+  color: #4b5563;
+  transition: all 0.2s;
+  max-width: fit-content;
+}
+
+.tutorial-button:hover {
+  background: #e5e7eb;
+}
+
+/* Tablet styles */
+@media (max-width: 1024px) {
+  .invoice-management {
+    margin: 0.5rem;
+    border-radius: 0.5rem;
+  }
+
+  .header-container {
+    padding: 0.5rem;
+  }
+
+  .header-title {
+    font-size: 1.25rem;
+  }
+
+  .header-subtitle {
+    font-size: 0.813rem;
+  }
+}
+
+/* Mobile styles */
+@media (max-width: 768px) {
+  .invoice-management {
+    margin: 0;
+    padding: 0.5rem;
+    border-radius: 0;
+  }
+
+  .header-container {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.75rem;
+    padding: 0.5rem;
+  }
+
+  .button-group {
+    width: 100%;
+  }
+
+  .new-invoice-button {
+    width: 100%;
+    justify-content: center;
+    padding: 0.75rem;
+  }
+
+  .tutorial-button-wrapper {
+    margin-bottom: 0.75rem;
+    justify-content: flex-start;
+  }
+
+  .tutorial-button {
+    width: auto;
+    padding: 0.5rem 0.75rem;
+  }
+}
+
+/* Small mobile styles */
+@media (max-width: 480px) {
+  .invoice-management {
+    padding: 0.25rem;
+  }
+
+  .header-title {
+    font-size: 1.125rem;
+  }
+
+  .header-subtitle {
+    font-size: 0.75rem;
+  }
+
+  .new-invoice-button,
+  .tutorial-button {
+    font-size: 0.813rem;
+    padding: 0.625rem;
+  }
+
+  .tutorial-button-wrapper {
+    margin-bottom: 0.5rem;
+  }
+
+  .tutorial-button {
+    font-size: 0.813rem;
+    padding: 0.5rem 0.75rem;
+  }
+}
+
+/* Handle scrollbar appearance */
+.invoice-management-content::-webkit-scrollbar {
+  height: 6px;
+}
+
+.invoice-management-content::-webkit-scrollbar-track {
+  background: #f1f5f9;
+  border-radius: 3px;
+}
+
+.invoice-management-content::-webkit-scrollbar-thumb {
+  background: #cbd5e1;
+  border-radius: 3px;
+}
+
+.invoice-management-content::-webkit-scrollbar-thumb:hover {
+  background: #94a3b8;
+}

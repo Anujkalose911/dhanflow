@@ -1,0 +1,107 @@
+.pending-installments-container {
+  padding: 0;
+  margin: 0;
+  background: #fff;
+}
+
+.pending-installments-header {
+  text-align: center;
+  padding: 10px 0;
+  background: #fff;
+}
+
+.pending-installments-title {
+  font-size: 24px;
+  font-weight: 600;
+  color: #1a237e;
+  margin: 0;
+}
+
+.search-container {
+  display: flex;
+  justify-content: center;
+  padding: 15px 0;
+  background: #fff;
+}
+
+.search-input {
+  width: 300px;
+  padding: 8px 12px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 14px;
+  text-align: center;
+}
+
+.search-input:focus {
+  outline: none;
+  border-color: #4285f4;
+}
+
+.installments-table-container {
+  margin: 0;
+  padding: 0 20px;
+  background: #fff;
+}
+
+.installments-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+}
+
+.installments-table th {
+  background-color: #4285f4;
+  color: white;
+  font-weight: 500;
+  padding: 10px 15px;
+  text-align: left;
+  white-space: nowrap;
+}
+
+.installments-table td {
+  padding: 10px 15px;
+  border-bottom: 1px solid #eee;
+  color: #333;
+}
+
+.installments-table tr:hover {
+  background-color: #f8f9fa;
+}
+
+/* Column specific styles */
+.installments-table th:first-child,
+.installments-table td:first-child {
+  padding-left: 20px;
+}
+
+.installments-table th:last-child,
+.installments-table td:last-child {
+  padding-right: 20px;
+  text-align: right;
+}
+
+/* Amount formatting */
+.amount {
+  font-family: monospace;
+  font-size: 14px;
+  color: #333;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .search-input {
+    width: 90%;
+    max-width: 300px;
+  }
+
+  .installments-table-container {
+    padding: 0 10px;
+  }
+
+  .installments-table th,
+  .installments-table td {
+    padding: 8px 10px;
+    font-size: 14px;
+  }
+} 

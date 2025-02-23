@@ -1,0 +1,112 @@
+/* Operator-specific styles */
+.operator-dashboard .kpi-card {
+  position: relative;
+  overflow: hidden;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.operator-dashboard .kpi-icon {
+  background: #f8f9fa;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 16px;
+  transition: all 0.3s ease;
+}
+
+/* Specific colors for operator KPI types */
+.operator-dashboard .kpi-card.total .kpi-icon {
+  background: rgba(33, 150, 243, 0.1);
+  color: #2196f3;
+}
+
+.operator-dashboard .kpi-card.pending .kpi-icon {
+  background: rgba(255, 171, 0, 0.1);
+  color: #ffab00;
+}
+
+.operator-dashboard .kpi-card.priority .kpi-icon {
+  background: rgba(239, 68, 68, 0.1);
+  color: #ef4444;
+}
+
+.operator-dashboard .kpi-card.approved .kpi-icon {
+  background: rgba(16, 185, 129, 0.1);
+  color: #10b981;
+}
+
+.operator-dashboard .kpi-card.rejected .kpi-icon {
+  background: rgba(220, 38, 38, 0.1);
+  color: #dc2626;
+}
+
+.operator-dashboard .kpi-card.today .kpi-icon {
+  background: rgba(99, 102, 241, 0.1);
+  color: #6366f1;
+}
+
+.operator-dashboard .kpi-content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 8px;
+}
+
+.operator-dashboard .kpi-content h3 {
+  margin: 0;
+  font-size: 14px;
+  font-weight: 500;
+  color: #666;
+}
+
+.operator-dashboard .kpi-content .kpi-value {
+  font-size: 24px;
+  font-weight: 600;
+  color: #333;
+}
+
+/* Activity list styles */
+.operator-dashboard .activity-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px;
+  border-bottom: 1px solid #eee;
+}
+
+.operator-dashboard .activity-description {
+  flex: 1;
+  margin-right: 16px;
+}
+
+.operator-dashboard .time {
+  color: #666;
+  font-size: 0.9em;
+  white-space: nowrap;
+}
+
+/* Action buttons */
+.operator-dashboard .action-buttons {
+  display: flex;
+  gap: 16px;
+}
+
+.operator-dashboard .btn {
+  padding: 8px 16px;
+  border-radius: 4px;
+  background-color: #1a73e8;
+  color: white;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.operator-dashboard .btn:hover {
+  background-color: #1557b0;
+} 

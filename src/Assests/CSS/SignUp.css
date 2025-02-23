@@ -1,0 +1,762 @@
+body {
+  height: 100vh !important;
+  background: linear-gradient(to top, #20445f, rgb(241, 242, 245)); /* Light blue to white gradient */
+}
+.bgcolor {
+  background: linear-gradient(to top, #20445f, rgb(241, 242, 245)); /* Light blue to white gradient */
+}
+.hindi-text {
+  font-weight: bolder;
+  font-size: 100px;
+  margin-left: 200px; /* Match SignIn.css */
+  margin-top: 100px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 10px;
+}
+.hindi-text::after {
+  content: "Flow";
+  color: rgb(70, 107, 200);
+  display: inline;
+  position: relative;
+  top: 0;
+}
+.hindi-text h6 {
+  margin-left: 210px;
+}
+.side-text span {
+  color: rgb(0, 0, 0);
+  margin-left: 200px; /* Match SignIn.css */
+  font-size: 40px;
+}
+.side-para p {
+  color: rgb(0, 0, 0);
+  margin-left: 200px; /* Match SignIn.css */
+  font-size: 25px; /* Adjusted font size */
+  font-weight: 500; /* Set font weight to a numeric value for a little bold */
+}
+.signup-body {
+  margin-left: 950px; /* Match SignIn.css */
+  position: relative;
+  top: -450px; /* Adjust this value if needed */
+  min-height: 500px; /* Ensure the card is tall enough */
+  box-shadow: 0px 0px 5px hsl(161, 73%, 74%);
+  width: 30rem;
+  background-color: rgba(255, 255, 255, 0.8);
+  border-radius: 10px;
+  padding: 30px; /* Increased padding for better spacing */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.signup-body-h1 {
+  margin-top: 10%; /* Match SignIn.css */
+  display: flex;
+  margin: auto;
+  font-size: 35px;
+}
+.InputGroup1 {
+  width: 100%; /* Full width */
+  margin: 0 auto;
+  display: block;
+  padding: 10px;
+  font-size: 16px;
+}
+.account {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-top: 15px;
+}
+.account a {
+  text-decoration: none;
+}
+.Terms {
+  margin-left: 30px;
+  /* display: inline-block;
+  position: relative;
+  top: 5px;
+  left: px; */
+}
+.Buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 100%; /* Full width */
+  max-width: 400px; /* Set a maximum width for the button */
+  margin: 20px auto; /* Centered alignment */
+  border-radius: 20px;
+  height: 50px;
+  background-color: rgb(0, 102, 204);
+  color: #ffffff;
+  position: relative;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+.Buttons:hover {
+  background-color: #387bae;
+  color: #ffffff;
+  transform: translateY(-2px);
+}
+.gl-icon {
+  width: 30px;
+  height: 30px;
+  margin-right: 10px;
+}
+.Feedback {
+  margin-left: 180px;
+}
+
+/* Modal Styling */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+.modal.show {
+  display: block;
+}
+.modal-content {
+  background-color: white;
+  margin: 15% auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 30%;
+}
+.form-row {
+  margin-bottom: 15px;
+}
+.form-row label {
+  display: block;
+}
+.form-row input {
+  width: 100%;
+  padding: 8px;
+  margin-top: 5px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+.close-btn {
+  background-color: rgb(144, 0, 0);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 400px;
+  margin-left: 0px;
+  margin-top: 20px;
+  border-radius: 20px;
+  height: 50px;
+  color: #ffffff;
+}
+.close-btn:hover {
+  background-color: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
+}
+.accept-terms {
+  margin-left: 30px;
+  position: relative;
+  top: 30px;
+}
+.submit-button1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 100%; /* Full width */
+  max-width: 400px; /* Set a maximum width for the button */
+  margin: 20px auto; /* Centered alignment */
+  border-radius: 20px;
+  height: 50px;
+  background-color: rgb(0, 102, 204);
+  border-color: #ffffff;
+  color: #000000;
+}
+.submit-button2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 100%; /* Full width */
+  max-width: 400px; /* Set a maximum width for the button */
+  margin: 20px auto; /* Centered alignment */
+  border-radius: 20px;
+  height: 50px;
+  background-color: rgb(0, 102, 204);
+  border-color: #ffffff;
+  color: #ffffff;
+}
+.submit-button1:hover {
+  background-color: #387bae;
+  color: black;
+}
+.submit-button2:hover {
+  background-color: #387bae;
+}
+.submit-button2 a {
+  color: #000000 !important;
+  text-decoration: none;
+}
+
+.ownership-question {
+  margin-left: 30px;
+  margin-top: 10px;
+}
+.ownership-question-button {
+  position: relative;
+  left: 0px;
+}
+/* Media Query for Tablet View (max-width: 768px) */
+@media screen and (max-width: 768px) {
+  .hindi-text {
+    font-size: 50px; /* Match SignIn.css */
+    margin: 0; /* Centered alignment */
+    text-align: center; /* Centered text */
+    width: 100%;
+    justify-content: center; /* Centered alignment */
+  }
+
+  .hindi-text h6 {
+    margin: 0; /* Centered alignment */
+  }
+
+  .side-text span {
+    font-size: 30px; /* Adjusted to match SignIn.css */
+    margin: 0; /* Centered alignment */
+  }
+
+  .side-para p {
+    font-size: 18px; /* Match SignIn.css */
+    margin: 0; /* Centered alignment */
+  }
+
+  .signup-body {
+    margin: 50px auto !important; /* Increased top margin */
+    position: static !important;
+    width: 90% !important;
+    max-width: 400px !important;
+    top: 0 !important;
+  }
+
+  .signup-body-h1 {
+    font-size: 35px; /* Adjusted to match SignIn.css */
+    margin: auto;
+  }
+
+  .InputGroup1 {
+    width: 100%;
+    margin-left: 0;
+  }
+
+  .account {
+    flex-direction: column; /* Aligning items vertically */
+    margin-top: 10px;
+  }
+
+  .account a {
+    font-size: 16px; /* Adjusted to match SignIn.css */
+  }
+
+  .Buttons {
+    width: 100%; /* Full width */
+    margin-left: 0px;
+    background-color: rgb(0, 102, 204);
+    color: #ffffff;
+  }
+
+  .Buttons:hover {
+    background-color: rgb(255, 255, 255);
+    color: #000;
+  }
+
+  .gl-icon {
+    width: 25px; /* Adjusted to match SignIn.css */
+    position: relative;
+    bottom: 20px;
+    left: 70px;
+  }
+
+  .Feedback {
+    margin-left: 0px; /* Centered alignment */
+  }
+
+  .modal-content {
+    width: 90%; /* Responsive width */
+  }
+
+  .form-row input {
+    width: 100%;
+  }
+
+  .close-btn {
+    width: 90%; /* Responsive width */
+  }
+
+  .submit-button1 {
+    width: 100%; /* Full width */
+    background-color: rgb(0, 179, 255);
+    margin-left: 0px; /* Centered alignment */
+    color: #000000;
+  }
+  .submit-button2 {
+    width: 100%; /* Full width */
+    background-color: rgb(0, 179, 255);
+    margin-left: 0px; /* Centered alignment */
+    color: #000000;
+  }
+  .submit-button:hover {
+    background-color: rgb(255, 255, 255);
+    color: black;
+  }
+
+  .ownership-question {
+    margin-left: 0px; /* Centered alignment */
+  }
+
+  .ownership-question-button {
+    position: relative;
+    left: 0px;
+  }
+
+  /* Hide all desktop content */
+  .side-para,
+  .side-text,
+  .desktop-only {
+    display: none !important;
+  }
+
+  /* Show and style the mobile text */
+  .mobile-whatsapp-text {
+    display: block !important;
+    text-align: center;
+    padding: 15px 20px;
+    margin: 20px auto 40px; /* Increased bottom margin */
+    font-size: 16px;
+    color: #040d14;
+    max-width: 90%;
+    line-height: 1.5;
+    font-weight: 500;
+  }
+
+  /* Show mobile text */
+  .mobile-text-wrapper {
+    display: block !important;
+    width: 100%;
+    padding: 0 20px;
+    margin: 10px 0 20px 0; /* Reduced margin */
+  }
+
+  /* Adjust signup form position */
+  .signup-body {
+    margin: 20px auto !important; /* Reduced top margin */
+    position: static !important;
+    width: 90% !important;
+    max-width: 400px !important;
+    top: 0 !important;
+    padding: 15px;
+  }
+
+  /* Update form layout for name fields */
+  .form-row {
+    display: flex !important;
+    flex-direction: row !important;
+    gap: 10px;
+    margin-bottom: 15px;
+  }
+
+  /* Style for name input containers */
+  .form-group {
+    flex: 1 !important;
+    width: 50% !important;
+    margin-bottom: 15px !important;
+  }
+
+  /* Style for first name and last name inputs */
+  input[name$="FIRSTNAME"],
+  input[name$="LASTNAME"],
+  input[name="Owner_Name"],
+  input[name="Owner_LASTNAME"] {
+    width: 100% !important;
+    margin: 5px 0 !important;
+    height: 50px !important;
+    font-size: 16px !important;
+    border-radius: 8px !important;
+  }
+
+  /* Other form fields should remain full width */
+  input[type="email"],
+  .phone-input-container,
+  .react-phone-input-2 {
+    width: 100% !important;
+  }
+
+  /* Style phone input containers */
+  .phone-input-wrapper {
+    width: 100% !important;
+    margin: 10px 0 !important;
+  }
+
+  /* Add label for owner's phone */
+  .owner-phone-label {
+    display: block !important;
+    width: 100% !important;
+    text-align: left !important;
+    margin: 15px 0 5px 0 !important;
+    font-size: 16px !important;
+    color: #333 !important;
+    font-weight: 500 !important;
+  }
+
+  .owner-phone-hint {
+    text-align: left;
+    margin-bottom: 10px;
+  }
+}
+
+/* Media Query for Mobile View (max-width: 480px) */
+@media screen and (max-width: 320px) {
+  .hindi-text {
+    font-size: 40px; /* Match SignIn.css */
+    margin-bottom: 15px; /* Adjusted margin for better spacing */
+  }
+
+  .hindi-text h6 {
+    margin: 0; /* Centered alignment */
+  }
+
+  .side-text span {
+    font-size: 25px; /* Adjusted to match SignIn.css */
+    margin: 0; /* Centered alignment */
+  }
+
+  .side-para p {
+    font-size: 18px; /* Match SignIn.css */
+    margin: 0; /* Centered alignment */
+  }
+
+  .signup-body {
+    max-width: 400px;
+    margin: 50px auto !important; /* Increased top margin */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  }
+
+  .signup-body-h1 {
+    font-size: 25px; /* Adjusted to match SignIn.css */
+    margin: auto;
+  }
+
+  .InputGroup1 {
+    display: flex;
+    text-align: center;
+    width: 96% !important;
+    margin-left: 5px;
+    margin-top: 5px;
+    border-radius: 6px;
+    height: 50px;
+    font-size: 12px; /* Adjusted to match SignIn.css */
+  }
+
+  .account {
+    flex-direction: column; /* Stack items vertically */
+    margin-top: 10px;
+  }
+
+  .account a {
+    font-size: 14px; /* Adjusted to match SignIn.css */
+  }
+
+  .Buttons {
+    width: 100%; /* Full width */
+    margin-left: 0px;
+    background-color: rgb(0, 179, 255);
+    color: #ffffff;
+    font-size: 13px; /* Adjusted to match SignIn.css */
+  }
+
+  .Buttons:hover {
+    background-color: rgb(255, 255, 255);
+    color: #000;
+  }
+
+  .gl-icon {
+    width: 20px; /* Adjusted to match SignIn.css */
+    position: relative;
+    bottom: 10px;
+    left: 60px;
+  }
+
+  .Feedback {
+    margin-left: 0px; /* Centered alignment */
+  }
+
+  .modal-content {
+    width: 100%; /* Responsive width */
+  }
+
+  .form-row input {
+    width: 100%;
+  }
+
+  .close-btn {
+    width: 90%; /* Responsive width */
+  }
+
+  .submit-button {
+    width: 90%; /* Responsive width */
+    background-color: rgb(0, 179, 255);
+    color: #ffffff;
+  }
+
+  .submit-button:hover {
+    background-color: rgb(255, 255, 255);
+    color: black;
+  }
+
+  .ownership-question {
+    margin-left: 0px; /* Centered alignment */
+  }
+
+  .ownership-question-button {
+    position: relative;
+    left: 0px;
+  }
+  .Terms {
+    font-size: 14px; /* Adjusted to match SignIn.css */
+    margin-left: 10px; /* Adjusted margin for better spacing */
+  }
+}
+
+.verify-button {
+  background-color: #007bff;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 4px;
+  color: white;
+  font-size: 14px;
+  transition: background-color 0.3s;
+}
+
+.verify-button:disabled {
+  background-color: #cccccc;
+  cursor: not-allowed;
+}
+
+.verify-button:hover:not(:disabled) {
+  background-color: #0056b3;
+}
+
+/* Add these new styles at the top of your CSS file */
+.mobile-whatsapp-text {
+  display: none;
+}
+
+/* Update your existing mobile media query */
+@media screen and (max-width: 768px) {
+  /* Hide all desktop content */
+  .side-para,
+  .side-text,
+  .desktop-only {
+    display: none !important;
+  }
+
+  /* Show and style the mobile text */
+  .mobile-whatsapp-text {
+    display: block !important;
+    text-align: center;
+    padding: 15px 20px;
+    margin: 20px auto 40px; /* Increased bottom margin */
+    font-size: 16px;
+    color: #040d14;
+    max-width: 90%;
+    line-height: 1.5;
+    font-weight: 500;
+  }
+
+  /* Rest of your existing mobile styles... */
+}
+
+/* Add these new styles */
+.mobile-text-wrapper {
+  display: none;
+}
+
+.mobile-text-content {
+  display: none;
+}
+
+@media screen and (max-width: 768px) {
+  /* Hide desktop content */
+  .desktop-only,
+  .side-para,
+  .side-text {
+    display: none !important;
+  }
+
+  /* Show mobile text */
+  .mobile-text-wrapper {
+    display: block !important;
+    width: 100%;
+    padding: 0 20px;
+    margin: 10px 0 20px 0; /* Reduced margin */
+  }
+
+  .mobile-text-content {
+    display: block !important;
+    text-align: center;
+    font-size: 16px;
+    color: #040d14;
+    line-height: 1.5;
+    font-weight: 500;
+    margin: 0;
+    padding: 0;
+  }
+
+  /* Adjust signup form position */
+  .signup-body {
+    margin: 20px auto !important; /* Reduced top margin */
+    position: static !important;
+    width: 90% !important;
+    max-width: 400px !important;
+    top: 0 !important;
+    padding: 15px;
+  }
+
+  /* Stack name fields vertically */
+  .form-group {
+    width: 100% !important;
+    margin-bottom: 15px !important;
+  }
+
+  /* Make each name field take full width */
+  Form.Control {
+    width: 100% !important;
+    margin: 5px 0 !important;
+  }
+
+  /* Adjust form layout */
+  .form-row {
+    flex-direction: column !important;
+  }
+
+  /* Style individual name fields */
+  input[name$="FIRSTNAME"],
+  input[name$="LASTNAME"],
+  input[name="Owner_Name"],
+  input[name="Owner_LASTNAME"] {
+    width: 100% !important;
+    margin: 5px 0 !important;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .signup-body {
+    margin: 20px auto !important;
+    padding: 15px;
+  }
+}
+
+/* Add these styles for phone input */
+.react-tel-input .form-control {
+  width: 100% !important;
+  height: 50px !important;
+  font-size: 16px !important;
+  padding-left: 48px !important;
+}
+
+.react-tel-input .special-label {
+  display: block;
+  position: absolute;
+  z-index: 1;
+  top: 50%;
+  left: 48px;
+  transform: translateY(-50%);
+  color: #999;
+  pointer-events: none;
+}
+
+.react-tel-input .form-control:focus + .special-label,
+.react-tel-input .form-control:not(:placeholder-shown) + .special-label {
+  display: none;
+}
+
+/* Style specifically for owner's phone input */
+.owner-phone-input .form-control {
+  width: 100% !important;
+  height: 50px !important;
+  font-size: 16px !important;
+}
+
+.owner-phone-input .form-control::placeholder {
+  color: #999;
+  opacity: 1;
+}
+
+/* Style for the hint text */
+.owner-phone-hint {
+  display: block;
+  color: #666;
+  font-size: 12px;
+  margin-top: 4px;
+  margin-left: 4px;
+}
+
+@media screen and (max-width: 768px) {
+  .owner-phone-hint {
+    text-align: left;
+    margin-bottom: 10px;
+  }
+}
+
+/* Custom phone input styles */
+.custom-phone-input {
+  display: flex;
+  align-items: center;
+  border: 1px solid #ced4da;
+  border-radius: 8px;
+  padding: 0 10px;
+  background: white;
+  margin-bottom: 15px;
+}
+
+.country-code {
+  color: #495057;
+  font-size: 16px;
+  padding-right: 10px;
+  border-right: 1px solid #ced4da;
+  margin-right: 10px;
+}
+
+.phone-input-field {
+  border: none !important;
+  outline: none;
+  width: 100% !important;
+  height: 50px !important;
+  font-size: 16px !important;
+  padding: 10px !important;
+}
+
+.phone-input-field:focus {
+  box-shadow: none !important;
+}
+
+@media screen and (max-width: 768px) {
+  .custom-phone-input {
+    width: 100%;
+    margin: 10px 0;
+  }
+
+  .phone-input-field {
+    font-size: 14px !important;
+  }
+}

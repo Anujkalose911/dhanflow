@@ -1,0 +1,408 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+}
+
+:root {
+  --light-blue: #e0f7fa;
+  --medium-blue: #80deea;
+  --dark-blue: #4dd0e1;
+  --accent-blue: #26c6da;
+  --text-white: #ffffff;
+}
+
+body {
+  background: rgb(255, 255, 255);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  overflow-x: hidden;
+}
+
+.container-installments h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: var(--text-white);
+}
+
+.calendar-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  margin-top: 60px;
+  padding: 20px;
+}
+.calendar-container h2 {
+  color: rgb(0, 0, 0);
+  margin-bottom: 50px;
+}
+
+.calendar-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  max-width: 800px;
+  gap: 20px;
+}
+
+.box {
+  background-color: var(--text-white);
+  border-radius: 30px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.35);
+  padding: 20px;
+  width: 100%;
+  max-width: 800px;
+  overflow: hidden;
+  margin-bottom: 20px;
+}
+
+.container-calendar {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#right {
+  width: 100%;
+}
+
+.button-container-calendar {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+.footer-container-calendar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 0;
+}
+
+.footer-container-calendar label,
+.footer-container-calendar select {
+  font-size: 14px;
+  color: var(--dark-blue);
+}
+
+.wrapper {
+  max-width: 100%;
+  overflow-x: auto;
+}
+
+.table-calendar {
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto;
+  border-collapse: collapse;
+}
+
+.table-calendar th,
+.table-calendar td {
+  padding: 8px;
+  text-align: center;
+  border: 1px solid var(--light-blue);
+  color: var(--dark-blue);
+}
+
+.container-installments table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 50px;
+}
+
+.container-installments th,
+.container-installments td {
+  padding: 12px 15px;
+  border: 1px solid var(--light-blue);
+  text-align: left;
+}
+
+.container-installments th {
+  background-color: var(--medium-blue);
+  color: var(--text-white);
+}
+
+.container-installments tr:nth-child(odd) {
+  background-color: var(--medium-blue);
+  color: var(--text-white);
+}
+
+.container-installments tr:nth-child(even) {
+  background-color: var(--text-white);
+  color: var(--dark-blue);
+}
+
+.container-installments caption {
+  margin-bottom: 10px;
+  font-weight: bold;
+  color: var(--text-white);
+}
+
+.container-installments button {
+  background-color: var(--medium-blue);
+  color: var(--text-white);
+  padding: 8px 12px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 12px;
+}
+
+.container-installments button:hover {
+  background-color: var(--accent-blue);
+}
+
+.selected-date {
+  background-color: var(--medium-blue) !important;
+  color: var(--text-white) !important;
+  border-radius: 8px !important;
+  font-weight: bold;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.selected-date:hover {
+  opacity: 0.9;
+}
+
+.data-display {
+  margin-top: 20px;
+  padding: 10px;
+  border: 1px solid var(--light-blue);
+  border-radius: 5px;
+  background-color: var(--text-white) !important;
+}
+
+.data-display p {
+  margin: 5px 0;
+  font-size: 1rem;
+  color: var(--dark-blue);
+}
+
+.no-data {
+  color: var(--text-white);
+}
+#installments-table caption {
+  position: relative;
+  top: -170px;
+  text-align: center;
+}
+@media only screen and (max-width: 480px) {
+  .calendar-container {
+    padding: 10px;
+    max-width: 100%;
+  }
+
+  .calendar-content {
+    gap: 15px;
+    max-width: 100%;
+  }
+
+  .box {
+    padding: 15px;
+    width: 100%;
+  }
+
+  .table-calendar {
+    table-layout: fixed;
+    width: 100%;
+  }
+
+  .table-calendar th,
+  .table-calendar td {
+    padding: 8px;
+    font-size: 0.9rem;
+    height: 40px;
+    width: calc(100% / 7);
+  }
+
+  .footer-container-calendar {
+    flex-direction: column;
+    gap: 5px;
+    align-items: flex-start;
+  }
+
+  .footer-container-calendar select {
+    width: 100%;
+  }
+
+  .container-installments table {
+    font-size: 0.85rem;
+  }
+
+  .container-installments th,
+  .container-installments td {
+    padding: 10px;
+  }
+
+  #installments-table {
+    width: 100%;
+    font-size: 0.75rem;
+  }
+
+  .data-display p {
+    font-size: 0.85rem;
+  }
+
+  #calendar-body td {
+    display: table-cell;
+    width: calc(10% / 7);
+  }
+
+  /* Adjust the input type for selected date */
+  input[type="date"] {
+    font-size: 1rem;
+    padding: 8px;
+    width: 100%; /* Ensure it scales correctly */
+    max-width: 250px; /* Add a max-width to prevent it from expanding too much */
+    margin: 10px auto; /* Center it and provide space around */
+    display: block; /* Ensures it's centered */
+    position: relative;
+    top: 0; /* No movement on top */
+    left: 0; /* No movement on left */
+  }
+
+  /* General Input field styling */
+  input {
+    font-size: 1rem;
+    padding: 8px;
+    width: 80%;
+    margin-top: 15px;
+    display: block;
+  }
+  /* Add horizontal scrolling for the table */
+  #installments-table {
+    width: 100%;
+    font-size: 0.75rem;
+    display: block;
+    overflow-x: auto; /* Makes the table scrollable */
+    white-space: nowrap; /* Prevents the table from wrapping text */
+  }
+
+  #installments-table caption {
+    font-size: 1rem;
+    padding: 10px;
+    text-align: center;
+  }
+
+  #installments-table th,
+  #installments-table td {
+    padding: 10px 5px;
+    font-size: 0.75rem;
+    text-align: left;
+  }
+
+  #installments-body td.no-data {
+    font-size: 0.85rem;
+  }
+
+  /* Adjusting the overall layout for mobile */
+  .container-installments table {
+    font-size: 0.75rem;
+    margin-top: 20px;
+  }
+
+  .container-installments th,
+  .container-installments td {
+    padding: 10px;
+  }
+}
+
+.date-cell {
+  cursor: pointer;
+  transition: all 0.3s ease;
+  width: 40px;
+  height: 40px;
+  position: relative;
+}
+
+.date-cell:hover {
+  background-color: var(--light-blue);
+  border-radius: 8px;
+}
+
+.current-date {
+  background-color: var(--medium-blue) !important;
+  color: var(--text-white) !important;
+  border-radius: 8px !important;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.current-date:hover {
+  background-color: var(--accent-blue) !important;
+}
+
+/* Make the date input more compact */
+#installment-date {
+  width: 150px;
+  padding: 8px;
+  border: 1px solid var(--medium-blue);
+  border-radius: 4px;
+  margin-left: 10px;
+  margin-bottom: 20px;
+}
+
+/* Tutorial button styling */
+.tutorial-button {
+    position: absolute;
+    top: 80px; /* Position after Header2 */
+    left: 20px;
+    background-color: transparent;
+    color: var(--dark-blue);
+    padding: 8px 12px;
+    border: 1px solid var(--medium-blue);
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 12px;
+    transition: all 0.3s ease;
+    z-index: 100;
+}
+
+.tutorial-button:hover {
+    background-color: var(--light-blue);
+    color: var(--dark-blue);
+    transform: translateY(-1px);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Update mobile styles */
+@media (max-width: 768px) {
+    .tutorial-button {
+        top: 70px;
+        left: 10px;
+        padding: 6px 10px;
+        font-size: 11px;
+    }
+}
+
+/* Joyride tooltip customization */
+.__floater__body {
+    border-radius: 8px !important;
+    padding: 20px !important;
+}
+
+.__floater__arrow {
+    display: none !important;
+}
+
+/* Make tutorial more visible on mobile */
+@media (max-width: 768px) {
+    .__floater__body {
+        max-width: 90vw !important;
+        padding: 15px !important;
+    }
+}
+
+/* Highlight active elements during tutorial */
+[data-rj-tutorial-highlighted] {
+    position: relative;
+    z-index: 999;
+}

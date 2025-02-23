@@ -1,0 +1,185 @@
+/* .Header2-background {
+  background-color: rgb(0, 0, 0);
+}
+.CompanyLogo2 {
+  width: 170px;
+}
+.navbar-ulist {
+  display: flex;
+  margin: auto;
+  position: relative;
+  right: 18px;
+}
+.navbar-list {
+  font-size: 16px;
+  font-weight: 600;
+  margin-left: 10px;
+  color: white;
+}
+.navbar-dropdown {
+  position: relative;
+  left: 130px;
+}
+.header2-button {
+  width: 100px;
+  height: 40px;
+  border-radius: 8px;
+  background-color: rgb(67, 255, 101);
+  color: rgb(0, 0, 0);
+}
+.header2-button:hover {
+  background-color: white;
+  color: rgb(255, 255, 255) !important;
+  transition: ease-in-out 0.5s;
+}
+.navbar-list:hover {
+  color: blue !important;
+} */
+
+/* Header2.css */
+
+/* General styles */
+.Header2-background {
+  background-color: #edeaea;
+}
+
+.CompanyLogo2 {
+  width: 150px;
+  height: 30px;
+}
+
+.navbar-ulist {
+  display: flex;
+  margin: auto;
+  position: relative;
+  right: 18px;
+  align-items: center;
+}
+
+.navbar-list {
+  font-size: 16px;
+  font-weight: 600;
+  margin-left: 10px;
+  color: white !important;
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+}
+
+.navbar-dropdown {
+  position: relative;
+  left: 0;
+  margin-left: 20px;
+  transition: all 0.3s ease-in-out;
+}
+
+.navbar-dropdown:hover .dropdown-menu {
+  display: block !important;
+}
+
+.ProfileLogo2 {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  margin-top: 10px;
+}
+
+.header2-button {
+  width: 100px;
+  height: 40px;
+  border-radius: 8px;
+  background-color: rgb(67, 255, 101);
+  color: rgb(0, 0, 0);
+}
+
+.header2-button:hover {
+  background-color: white;
+  color: rgb(0, 0, 0) !important;
+  transition: ease-in-out 0.5s;
+}
+
+.navbar-list:hover {
+  color: #3208de !important;
+}
+
+.navbar-dropdown .dropdown-toggle {
+  color: white !important;
+}
+
+#basic-nav-dropdown {
+  color: white !important;
+}
+
+.dropdown-menu {
+  background-color: white;
+}
+
+.dropdown-item {
+  color: black !important;
+}
+
+/* For mobile devices (320px to 480px) */
+@media (max-width: 480px) {
+  .CompanyLogo2 {
+    width: 120px;
+  }
+
+  .navbar-ulist {
+    flex-direction: column;
+    text-align: center;
+    position: initial;
+  }
+
+  .navbar-list {
+    font-size: 14px;
+    margin-left: 0;
+    margin-top: 10px;
+  }
+
+  .navbar-dropdown {
+    position: relative;
+    margin: 20px auto 0;
+    left: 3px;
+  }
+
+  .ProfileLogo2 {
+    width: 25px;
+    height: 25px;
+    margin-top: 15px;
+  }
+
+  .dropdown-menu {
+    right: 0 !important;
+    left: auto !important;
+  }
+
+  .header2-button {
+    width: 90px;
+    height: 35px;
+  }
+}
+
+/* For tablets (481px to 768px) */
+@media (max-width: 768px) {
+  .CompanyLogo2 {
+    width: 150px;
+  }
+
+  .navbar-list {
+    font-size: 15px;
+    margin-top: 10px;
+  }
+
+  .navbar-dropdown {
+    left: 0px;
+  }
+
+  .ProfileLogo2 {
+    width: 28px;
+    height: 28px;
+  }
+
+  .dropdown-menu {
+    right: 0 !important;
+    left: auto !important;
+  }
+}

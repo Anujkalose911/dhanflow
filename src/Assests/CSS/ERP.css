@@ -1,0 +1,193 @@
+.ERP-body {
+  display: flex;
+  margin: auto;
+  position: relative;
+  top: 160px;
+  height: max-content;
+  width: 30rem;
+  box-shadow: 10px 10px 5px rgb(138, 237, 206);
+}
+
+.ERP-Head {
+  margin-left: 165px;
+}
+
+.select-label {
+  margin-left: 100px;
+  margin-top: 20px;
+}
+
+.ERP-input {
+  width: 20rem !important;
+  text-align: center;
+  display: flex;
+  margin: auto;
+  position: relative;
+  top: 50px;
+  height: 40px;
+  border-radius: 9px;
+}
+
+.ERP-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 400px;
+  margin-left: 20px;
+  margin-top: 80px;
+  border-radius: 20px;
+  height: 50px;
+  background-color: rgb(0, 179, 255);
+  color: #ffffff;
+  font-size: 20px;
+}
+
+.ERP-button:hover {
+  background-color: rgb(255, 255, 255);
+  color: #000;
+}
+
+#ERP {
+  margin-left: 10px;
+}
+.ERP-button a {
+  text-decoration: none !important;
+  color: #ffffff !important;
+}
+.ERP-button a:hover {
+  color: #000 !important;
+}
+
+/* Media Query for Mobile Devices */
+@media screen and (max-width: 768px) {
+  .ERP-body {
+    width: 90%; /* Reduce width to 90% on smaller screens */
+    top: 100px; /* Adjust the vertical positioning */
+  }
+
+  .ERP-Head {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    font-size: 1.5rem; /* Smaller font size for mobile */
+  }
+
+  .select-label {
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    text-align: center;
+    margin-top: 20px;
+    font-size: 16px; /* Slightly smaller font size for mobile */
+  }
+
+  select {
+    width: 100%; /* Make select element full-width */
+    margin: auto;
+    display: block;
+    margin-top: 10px;
+  }
+
+  .ERP-input {
+    width: 100% !important; /* Input field takes full width */
+    margin: auto;
+    top: 10px;
+    height: 40px;
+    font-size: 14px; /* Smaller font for mobile */
+    text-align: center; /* Align text to left for mobile */
+  }
+
+  .ERP-button {
+    width: 90%; /* Reduce button width to 90% */
+    margin: auto;
+    margin-top: 20px;
+    height: 50px;
+    font-size: 16px; /* Reduce font size */
+  }
+
+  #ERP {
+    width: 100%; /* Full width for ERP select dropdown */
+    margin: auto;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .ERP-body {
+    width: 100%; /* Full width on smaller mobile devices */
+    top: 50px;
+  }
+
+  .ERP-Head {
+    font-size: 1.2rem;
+  }
+
+  .select-label {
+    font-size: 14px; /* Further reduce the font size */
+  }
+
+  .ERP-input {
+    margin-top: 10px !important;
+    width: 80% !important; /* Make input more responsive */
+    font-size: 14px;
+  }
+
+  .ERP-button {
+    width: 90%;
+    font-size: 14px;
+    margin-top: 40px;
+  }
+
+  select {
+    width: 100%;
+  }
+}
+
+/* Add these tutorial-related styles */
+.tutorial-button {
+    position: absolute;
+    top: 80px;
+    left: 20px;
+    background-color: transparent;
+    color: rgb(0, 179, 255);
+    padding: 8px 12px;
+    border: 1px solid rgb(0, 179, 255);
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 12px;
+    transition: all 0.3s ease;
+    z-index: 100;
+    margin-top: 10px;
+}
+
+.tutorial-button:hover {
+    background-color: rgba(0, 179, 255, 0.1);
+    transform: translateY(-1px);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Joyride customization */
+.__floater__body {
+    border-radius: 8px !important;
+    padding: 20px !important;
+}
+
+.__floater__arrow {
+    display: none !important;
+}
+
+/* Highlight active elements during tutorial */
+[data-rj-tutorial-highlighted] {
+    position: relative;
+    z-index: 999;
+}
+
+/* Update mobile styles */
+@media (max-width: 768px) {
+    .tutorial-button {
+        top: 70px;
+        left: 10px;
+        padding: 6px 10px;
+        font-size: 11px;
+    }
+}

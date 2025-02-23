@@ -1,0 +1,222 @@
+.dashboard-container {
+  padding: 24px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.dashboard-title {
+  margin-bottom: 24px;
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.kpi-container {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  margin-bottom: 32px;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.kpi-card {
+  background: white;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  transition: transform 0.2s ease;
+}
+
+.kpi-card:hover {
+  transform: translateX(8px);
+}
+
+.kpi-icon-wrapper {
+  font-size: 28px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 50px;
+  color: #2196f3;
+}
+
+.kpi-content {
+  flex: 1;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.kpi-content h3 {
+  margin: 0;
+  font-size: 14px;
+  font-weight: 500;
+  color: #666;
+}
+
+.kpi-content p {
+  margin: 0;
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.recent-activity {
+  background: white;
+  border-radius: 8px;
+  padding: 24px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.recent-activity h2 {
+  margin-bottom: 16px;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.activity-list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.activity-item {
+  padding: 12px;
+  border-radius: 4px;
+  background: #f8f9fa;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+}
+
+.activity-item .time {
+  font-size: 12px;
+  color: #666;
+  white-space: nowrap;
+}
+
+.loading {
+  text-align: center;
+  padding: 40px;
+  font-size: 16px;
+  color: #666;
+}
+
+@media (max-width: 768px) {
+  .dashboard-container {
+    padding: 16px;
+  }
+
+  .kpi-content {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+  }
+
+  .activity-item {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .activity-item .time {
+    align-self: flex-end;
+  }
+}
+
+/* Auditor-specific styles */
+.auditor-dashboard .kpi-card {
+  position: relative;
+  overflow: hidden;
+}
+
+.auditor-dashboard .kpi-icon {
+  background: #f8f9fa;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 16px;
+  transition: all 0.3s ease;
+}
+
+/* Remove duplicate label */
+.auditor-dashboard .kpi-label {
+  display: none;
+}
+
+/* Specific colors for auditor KPI types */
+.auditor-dashboard .kpi-card.audit-logs .kpi-icon {
+  background: rgba(33, 150, 243, 0.1);
+  color: #2196f3;
+}
+
+.auditor-dashboard .kpi-card.flagged .kpi-icon {
+  background: rgba(245, 158, 11, 0.1);
+  color: #f59e0b;
+}
+
+.auditor-dashboard .kpi-card.priority .kpi-icon {
+  background: rgba(239, 68, 68, 0.1);
+  color: #ef4444;
+}
+
+.auditor-dashboard .kpi-card.rejected .kpi-icon {
+  background: rgba(220, 38, 38, 0.1);
+  color: #dc2626;
+}
+
+.auditor-dashboard .kpi-card.pending .kpi-icon {
+  background: rgba(99, 102, 241, 0.1);
+  color: #6366f1;
+}
+
+.auditor-dashboard .kpi-card.recent .kpi-icon {
+  background: rgba(16, 185, 129, 0.1);
+  color: #10b981;
+}
+
+/* Activity list styles */
+.auditor-dashboard .activity-details {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.auditor-dashboard .activity-type {
+  font-weight: 600;
+  color: #2196f3;
+}
+
+.auditor-dashboard .status {
+  padding: 4px 12px;
+  border-radius: 12px;
+  font-size: 0.8rem;
+  font-weight: 500;
+  text-transform: capitalize;
+}
+
+.auditor-dashboard .status.pending {
+  background-color: #fff7ed;
+  color: #f59e0b;
+}
+
+.auditor-dashboard .status.approved {
+  background-color: #ecfdf5;
+  color: #10b981;
+}
+
+.auditor-dashboard .status.rejected {
+  background-color: #fef2f2;
+  color: #ef4444;
+}
+
+.auditor-dashboard .status.flagged {
+  background-color: #eff6ff;
+  color: #3b82f6;
+} 

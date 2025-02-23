@@ -1,0 +1,140 @@
+.Home-content {
+  padding: 20px;
+  text-align: center;
+  margin: 0 auto;
+  position: relative;
+  z-index: 1;
+}
+.Home-p {
+  font-size: 16px;
+  line-height: 1.5;
+  margin: 20px auto;
+  font-weight: 400;
+}
+.Home-video-container {
+  width: 100%;
+  margin: 20px auto;
+}
+.Home-video {
+  width: 800px !important;
+  height: 400px;
+  max-width: 800px;
+  border-radius: 10px;
+  margin: 0 auto;
+}
+.button-common {
+  display: inline-block;
+  text-align: center;
+  width: 80%;
+  max-width: 400px;
+  padding: 15px;
+  border-radius: 20px;
+  background-color: rgb(13, 100, 206);
+  color: #FFFFFF;
+  font-size: 15px;
+  font-weight: bolder;
+  margin: 10px auto;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+.button-common:hover {
+  background-color: rgb(13, 100, 206);
+  color: rgb(0, 0, 0);
+  border: 1px solid rgb(255, 255, 255);
+}
+.button-common a {
+  text-decoration: none;
+  color: inherit;
+}
+.button-common a:hover {
+  text-decoration: none;
+}
+.Home-Download-Message {
+  font-size: 16px;
+  font-weight: bold;
+  margin: 20px auto;
+}
+.whatsapp-icon {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 100;
+}
+@media (max-width: 768px) {
+  .Home-p {
+    font-size: 14px;
+    font-weight: bold;
+    margin: 15px auto;
+    line-height: 1.6;
+  }
+  .button-common {
+    width: 90%;
+    padding: 12px;
+  }
+  .Home-video {
+    max-width: 100%;
+    height: auto;
+  }
+  .Home-video-container {
+    margin: 0 auto;
+  }
+  .Home-content {
+    padding: 15px;
+  }
+  .whatsapp-icon {
+    bottom: 15px;
+    right: 10px;
+  }
+  .tutorial-button {
+    font-size: 11px;
+    padding: 6px 10px;
+  }
+  /* Hide tutorial when navbar is expanded */
+  .navbar-collapse.show ~ .Home-content .tutorial-button-wrapper,
+  .navbar-toggler[aria-expanded="true"] ~ .Home-content .tutorial-button-wrapper {
+    display: none;
+  }
+}
+@media (max-width: 480px) {
+  .Home-p {
+    font-size: 13px;
+    line-height: 1.8;
+  }
+  .button-common {
+    padding: 10px;
+    font-size: 14px;
+  }
+}
+/* Add these tutorial-related styles to your existing CSS */
+.tutorial-button-wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  margin-bottom: 20px;
+}
+.tutorial-button {
+  background-color: transparent;
+  color: rgb(13, 100, 206);
+  padding: 8px 12px;
+  border: 1px solid rgb(13, 100, 206);
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 12px;
+  transition: all 0.3s ease;
+}
+.tutorial-button:hover {
+  background-color: rgba(13, 100, 206, 0.1);
+}
+/* Joyride customization */
+.__floater__body {
+  border-radius: 8px !important;
+  padding: 20px !important;
+}
+.__floater__arrow {
+  display: none !important;
+}
+/* Highlight active elements during tutorial */
+[data-rj-tutorial-highlighted] {
+  position: relative;
+  z-index: 999;
+}

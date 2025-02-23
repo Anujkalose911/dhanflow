@@ -1,0 +1,668 @@
+.hindi-text {
+  font-weight: bolder;
+  font-size: 100px;
+  margin-left: 300px;
+  margin-top: 75px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 10px;
+}
+.bgcolor{
+  
+  background-color: #D8E5FD;
+}
+
+.hindi-text::after {
+  content: "Flow";
+  color: rgb(70, 107, 200);
+  display: inline;
+  position: relative;
+  top: 0;
+  font-size: 110px;
+}
+
+.hindi-text h6 {
+  margin-left: 0;
+  font-size: 30px;
+  margin-top: 20px;
+  width: 100%;
+  text-align: center;
+}
+
+.side-text span {
+  color: rgb(0, 0, 0);
+  margin-left: 100px;
+  font-size: 40px;
+}
+
+.side-para p {
+  color: rgb(14, 68, 121);
+  margin-left: 145px;
+  font-size: 25px; /* Changed font size to be smaller */
+  font-weight: 500; /* Set font weight to a numeric value for a little bold */
+}
+
+.signin-body {
+  margin-left: 1050px;
+  position: relative;
+  top: -400px;  /* Changed from -400px to move it higher */
+  min-height: 200px;
+  box-shadow: 0px 0px 5px hsl(161, 73%, 74%);
+  width: 30rem;
+  background-color: rgba(255, 255, 255, 0.8);
+  border-radius: 10px;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.InputGroup2 {
+  width: 100%;
+  margin: 0 auto;
+  display: block;
+  padding: 10px;
+  font-size: 16px;
+}
+.signin-body-h1 {
+  margin-top: 10%;
+  display: flex;
+  margin: auto;
+  font-size: 32px;  /* Increased size for welcome text */
+  justify-content: center;
+  text-align: center;
+  font-weight: 600;  /* Made it slightly bolder */
+  color:  rgb(14, 68, 121);
+}
+
+.signin-subtitle {
+  text-align: center;
+  color: #5f6368;
+  font-size: 16px;
+  margin: 10px 0 20px;
+  padding: 0 20px;
+}
+
+.Buttons1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+  max-width: 400px;
+  margin-top: 20px;
+  border-radius: 20px;
+  height: 50px;
+  background-color: rgb(0, 102, 204);
+  color: #ffffff;
+  position: relative;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+.Buttons1:hover {
+  background-color: #387bae;
+  color: #ffffff;
+  transform: translateY(-2px);
+}
+
+.Buttons1 a {
+  text-decoration: none !important;
+  color: #ffffff;
+  margin-left: 10px;
+}
+
+.Buttons1 a:hover {
+  text-decoration: none !important;
+  color: #000000;
+}
+
+.Buttons1:hover {
+  background-color: #387bae;
+  color: #ffffff;
+  transform: translateY(-2px);
+}
+
+.Signin-gl-icon {
+  width: 30px;
+  height: 30px;
+  margin-right: 10px;
+}
+
+.number-input {
+  height: 50px;
+  margin-top: 5px;
+}
+
+.account1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-top: 15px;
+}
+
+.account1 a {
+  text-decoration: none;
+}
+.phone-input-container {
+  width: 80% !important;
+  display: flex;
+  margin: auto;
+  align-items: center;
+}
+
+.phone-input {
+  width: 100% !important;
+  padding-left: 50px;
+  height: auto;
+}
+
+.phone-dropdown {
+  background-color: #ffffff;
+  height: 62px;
+  margin-top: 6px !important;
+  border: 2px solid black;
+}
+
+@media screen and (max-width: 768px) {
+  .hindi-text {
+    font-size: 50px;
+    margin-top: 50px;
+    justify-content: center;
+  }
+
+  .hindi-text::after {
+    font-size: 50px;
+  }
+
+  .hindi-text h6 {
+    margin-left: 0;
+    text-align: center;
+    font-size: 24px;
+  }
+
+  .side-text span {
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    margin-left: 0px;
+  }
+
+  .side-para p {
+    font-size: 18px;
+    margin-left:-10;
+    text-align: center;
+    
+  }
+
+  .signin-body {
+    margin: 20px auto !important;
+    position: static !important;
+    width: 90% !important;
+    max-width: 400px !important;
+    top: 0 !important;
+    padding: 15px;
+  }
+
+  .InputGroup2 {
+    width: 100%;
+    margin-left: 0;
+  }
+
+  .Buttons1 {
+    width: 100%;
+    margin-left: 0;
+  }
+
+  .number-input {
+    height: 40px !important;
+    margin-top: 5px;
+  }
+
+  /* Show mobile text */
+  .mobile-text-wrapper {
+    display: block !important;
+    width: 100%;
+    padding: 0 20px;
+    margin: 10px 0 20px 0;
+  }
+
+  .mobile-text-content {
+    display: block !important;
+    text-align: center;
+    font-size: 16px;
+    color: #040d14;
+    line-height: 1.5;
+    font-weight: 500;
+    margin: 0;
+    padding: 0;
+  }
+
+  .signin-body-h1 {
+    font-size: 28px;
+  }
+
+  .signin-subtitle {
+    font-size: 14px;
+    margin: 8px 0 16px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .hindi-text {
+    font-size: 45px;
+    margin-bottom: 10px;
+  }
+
+  .hindi-text::after {
+    font-size: 45px;
+  }
+
+  .hindi-text h6 {
+    font-size: 16px;
+    margin-top: 6px;
+  }
+
+  .side-text span {
+    font-size: 16px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    margin-left: 0;
+  }
+
+  .side-para p {
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 1.5;
+    margin: 0 10px;
+    text-align: center;
+  }
+  
+  .signin-body {
+    max-width: 90%;
+    margin: 20px auto !important;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    margin-top: 100px !important; /* Adjusted from -2000px */
+  }
+  
+  .signin-body-h1 {
+    font-size: 22px;
+  }
+
+  .InputGroup2 {
+    font-size: 14px;
+    height: 36px;
+  }
+
+  .Buttons1 {
+    width: 100%;
+    font-size: 14px;
+  }
+
+  .Signin-gl-icon {
+    width: 22px;
+    height: 22px;
+  }
+}
+
+/* Add these new styles */
+.mobile-text-wrapper {
+  display: none;
+}
+
+.mobile-text-content {
+  display: none;
+}
+
+@media screen and (max-width: 768px) {
+  /* Hide desktop content */
+  .desktop-only,
+  .side-para,
+  .side-text {
+    display: none !important;
+  }
+
+  /* Show mobile text */
+  .mobile-text-wrapper {
+    display: block !important;
+    width: 100%;
+    padding: 0 20px;
+    margin: 10px 0 20px 0;
+  }
+
+  .mobile-text-content {
+    display: block !important;
+    text-align: center;
+    font-size: 16px;
+    color: #040d14;
+    line-height: 1.5;
+    font-weight: 500;
+    margin: 0;
+    padding: 0;
+  }
+
+  /* Adjust signin form position */
+  .signin-body {
+    
+    margin: 20px auto !important;
+    position: static !important;
+    width: 90% !important;
+    max-width: 400px !important;
+    top: 0 !important;
+    padding: 15px;
+  }
+}
+
+/* Custom phone input styles */
+.custom-phone-input {
+  display: flex;
+  align-items: center;
+  border: 1px solid #ced4da;
+  border-radius: 8px;
+  padding: 0 10px;
+  background: white;
+  margin-bottom: 15px;
+  width: 100%;
+}
+
+.country-code {
+  color: #495057;
+  font-size: 16px;
+  padding-right: 10px;
+  border-right: 1px solid #ced4da;
+  margin-right: 10px;
+}
+
+.phone-input-field {
+  border: none !important;
+  outline: none;
+  width: 100% !important;
+  height: 50px !important;
+  font-size: 16px !important;
+  padding: 10px !important;
+}
+
+.phone-input-field:focus {
+  box-shadow: none !important;
+}
+
+@media screen and (max-width: 768px) {
+  .custom-phone-input {
+    width: 100%;
+    margin: 10px 0;
+  }
+
+  .phone-input-field {
+    font-size: 14px !important;
+  }
+}
+
+/* Steps styling */
+.signin-steps {
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+.steps-section {
+  display: flex;
+  margin-left: 200px;
+  margin-top: 30px;
+  max-width: 600px;
+}
+.step-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 25px;
+  margin-left: 50px;
+  background: linear-gradient(to top, #20445f, rgb(128, 143, 190));
+  padding: 20px 20px 20px 40px;
+  border-radius: 50px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  position: relative;
+  min-height: 120px; /* Set fixed height for consistency */
+  opacity: 0;
+  animation: fadeIn 0.8s ease forwards;
+  width: 90%;
+}
+/* Add delay to each step item */
+.step-item:nth-child(1) {
+  animation-delay: 0.2s;
+  left: -140px;
+  background-color: #98b1f0;
+  height: 300px;
+}
+
+.step-item:nth-child(2) {
+  animation-delay: 0.4s;
+  left: -100px;
+  background-color: #98b1f0;
+  height: 300px;
+}
+
+.step-item:nth-child(3) {
+  animation-delay: 0.6s;
+  left: -60px;
+  background-color: #98b1f0;
+  height: 300px;
+}
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.step-number {
+  width: 100px;
+  height: 100px;
+  min-width: 80px;
+  background-color:  #20445f;
+  color: white;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: px;
+  font-weight: bold;
+  margin-right: 20px;
+  position: absolute;
+  left: -30px;
+  box-shadow: 0 2px 8px rgba(26, 115, 232, 0.3);
+  padding: 5px;
+  line-height: 1.2;
+  text-align: center;
+  transition: all 0.3s ease;
+}
+
+.step-content {
+  flex: 1;
+  padding-left: 35px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  
+}
+
+.step-content p {
+  margin: 0;
+  font-size: 14px;
+  font-weight: bold;
+  color: #000309;
+  line-height: 1.6;
+  max-width: 400px; /* Ensure consistent text width */
+}
+
+
+.step {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 20px;
+}
+
+.step-number {
+  background-color: #1a73e8;
+  color: white;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  margin-right: 20px;
+  flex-shrink: 0;
+}
+
+.step-content {
+  flex-grow: 1;
+  padding-left: 35px;
+}
+
+.step-content h3 {
+  margin: 0;
+  font-size: 18px;
+  font-weight: 600;
+  color: #0a2b5c;
+}
+
+.step-content p {
+  margin: 5px 0 0;
+  font-size: 14px;
+  color: #3b82c4;
+}
+
+/* Adjust spacing in mobile view */
+@media screen and (max-width: 768px) {
+  .signin-steps {
+    padding: 15px;
+  }
+
+  .step {
+    margin-bottom: 15px;
+  }
+
+  .step-content h3 {
+    font-size: 16px;
+  }
+
+  .step-content p {
+    font-size: 13px;
+  }
+
+  .step-number {
+    width: 60px;
+    height: 60px;
+    min-width: 60px;
+    font-size: 16px;
+    left: -20px;
+  }
+}
+
+/* Add these new styles */
+.steps-section {
+  margin-left: 200px;
+  margin-top: 30px;
+  max-width: 600px;
+}
+
+
+.step-item {
+  display: flex;
+  height: 200px;
+  align-items: center;
+  margin-bottom: 25px;
+  background: white;
+  padding: 20px 20px 20px 40px; /* Increased left padding to account for overlapping circle */
+  border-radius: 30px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  position: relative;
+}
+
+.step-number {
+  width: 100px;
+  height: 100px;
+  min-width: 80px;
+  background: #1a73e8;
+  color: white;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+  font-weight: bold;
+  margin-right: 20px;
+  position: absolute;
+  left: -30px;
+  box-shadow: 0 2px 8px rgba(26, 115, 232, 0.3);
+  padding: 5px;
+  line-height: 1.2;
+  text-align: center;
+  transition: all 0.3s ease;
+}
+/* Add animation for number changes */
+.step-number span {
+  display: inline-block;
+  transition: all 0.5s ease;
+}
+
+.step-content {
+  flex: 1;
+  padding-left: 35px;
+}
+
+.step-content h3 {
+  margin: 0 0 8px 0;
+  font-size: 18px;
+  font-weight: 600;
+  color: #333;
+}
+
+.step-content p {
+  margin: 0;
+  font-size: 14px;
+  color: #666;
+  line-height: 1.5;
+}
+
+/* Mobile adjustments */
+@media screen and (max-width: 768px) {
+  .steps-section {
+    margin: 20px;
+    padding: 0 20px; /* Added padding to prevent circles from touching screen edge */
+  }
+
+  .step-item {
+    padding: 15px 15px 15px 35px;
+  }
+
+  .step-number {
+    width: 60px;
+    height: 60px;
+    min-width: 60px;
+    font-size: 16px;
+    left: -20px;
+  }
+
+  .step-content {
+    padding-left: 20px;
+  }
+}
+
+.phone-label {
+  font-size: 16px;
+  color: #202124;
+  margin-bottom: 15px;
+}
+
+
+

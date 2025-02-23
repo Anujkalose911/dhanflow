@@ -1,0 +1,391 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap");
+
+:root {
+  --primary-black: #000000;
+  --dark-blue: #1e3a8a;
+  --medium-blue: #3b82f6;
+  --light-blue: #dbeafe;
+  --accent-blue: #1e40af;
+  --text-white: #ffffff;
+  --text-light-gray: #f8fafc;
+  --background-light: #eff6ff;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+}
+
+body {
+  background: white;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.content-container {
+  background-color: rgb(255, 255, 255);
+  margin: 80px auto 20px;
+  padding: 1.5rem;
+  border-radius: 0.75rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  width: 95%;
+  max-width: 1200px;
+  z-index: 1;
+}
+
+h1 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: var(--dark-blue);
+  margin-bottom: 1.5rem;
+}
+
+.controls-container {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+  flex-wrap: wrap;
+}
+
+.search-container {
+  flex: 1;
+  min-width: 200px;
+  position: relative;
+}
+
+.search-container input {
+  width: 100%;
+  padding: 0.75rem 1rem 0.75rem 2.5rem;
+  border: 1px solid var(--medium-blue);
+  border-radius: 0.5rem;
+  font-size: 0.875rem;
+  outline: none;
+  transition: all 0.2s;
+}
+
+.search-container input:focus {
+  border-color: var(--accent-blue);
+  box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.1);
+}
+
+.submit-btn {
+  background-color: var(--medium-blue);
+  color: var(--text-white);
+  border: none;
+  padding: 12px 20px;
+  font-size: 14px;
+  border-radius: 10px;
+  cursor: pointer;
+  margin-left: 10px;
+  transition: background-color 0.3s ease;
+}
+
+.submit-btn:hover {
+  background-color: var(--accent-blue);
+}
+
+.table-controls {
+  display: flex;
+  gap: 0.75rem;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.sort-select,
+.page-size-select {
+  padding: 0.75rem;
+  border: 1px solid var(--medium-blue);
+  border-radius: 0.5rem;
+  font-size: 0.875rem;
+  outline: none;
+  background-color: white;
+  color: var(--dark-blue);
+  cursor: pointer;
+  min-width: 120px;
+  transition: all 0.2s;
+}
+
+.sort-select:hover,
+.page-size-select:hover {
+  border-color: var(--accent-blue);
+}
+
+.table-container {
+  overflow-x: auto;
+  margin-bottom: 1.5rem;
+  border: 1px solid var(--light-blue);
+  border-radius: 0.5rem;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.875rem;
+}
+
+th, td {
+  padding: 0.75rem 1rem;
+  text-align: left;
+  border-bottom: 1px solid var(--light-blue);
+}
+
+th {
+  background-color: var(--medium-blue);
+  color: var(--text-white);
+  font-weight: 500;
+  white-space: nowrap;
+}
+
+tr:nth-child(even) {
+  background-color: var(--background-light);
+}
+
+tr:hover {
+  background-color: var(--light-blue);
+}
+
+.suggestions {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  background-color: var(--text-white);
+  border: 1px solid var(--medium-blue);
+  border-top: none;
+  border-radius: 0 0 0.5rem 0.5rem;
+  max-height: 200px;
+  overflow-y: auto;
+  z-index: 10;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.suggestion-item {
+  padding: 0.75rem 1rem;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.suggestion-item:hover {
+  background-color: var(--light-blue);
+}
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  gap: 0.5rem;
+  margin-top: 2rem;
+  flex-wrap: wrap;
+}
+
+.pagination button {
+  padding: 0.5rem 1rem;
+  border: 1px solid var(--medium-blue);
+  background-color: var(--text-white);
+  color: var(--medium-blue);
+  cursor: pointer;
+  border-radius: 0.375rem;
+  transition: all 0.2s;
+}
+
+.pagination button.active {
+  background-color: var(--medium-blue);
+  color: var(--text-white);
+  border-color: var(--medium-blue);
+}
+
+.pagination button:hover:not(.active) {
+  background-color: var(--light-blue);
+}
+
+.tutorial-button {
+  position: fixed;
+  top: 5rem;
+  right: 1rem;
+  background-color: var(--text-white);
+  color: var(--medium-blue);
+  padding: 0.5rem 1rem;
+  border: 1px solid var(--medium-blue);
+  border-radius: 0.375rem;
+  cursor: pointer;
+  font-size: 0.875rem;
+  transition: all 0.2s;
+  z-index: 100;
+}
+
+.tutorial-button:hover {
+  background-color: var(--light-blue);
+}
+
+/* Mobile styles */
+@media (max-width: 768px) {
+  .content-container {
+    margin: 60px auto 1rem;
+    padding: 1rem;
+    width: 100%;
+    border-radius: 0;
+  }
+
+  h1 {
+    font-size: 1.25rem;
+    margin-bottom: 1rem;
+  }
+
+  .controls-container {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .search-container {
+    width: 100%;
+  }
+
+  .table-controls {
+    width: 100%;
+    justify-content: space-between;
+  }
+
+  .sort-select,
+  .page-size-select {
+    flex: 1;
+    min-width: 0;
+    font-size: 0.813rem;
+    padding: 0.625rem;
+  }
+
+  table {
+    display: block;
+    width: 100%;
+  }
+
+  thead {
+    display: none;
+  }
+
+  tbody {
+    display: block;
+    width: 100%;
+  }
+
+  tr {
+    display: block;
+    padding: 1rem;
+    border-bottom: 1px solid var(--light-blue);
+    background: white;
+    margin-bottom: 0.5rem;
+  }
+
+  td {
+    display: flex;
+    padding: 0.5rem 0;
+    border: none;
+    font-size: 0.813rem;
+    align-items: center;
+  }
+
+  td::before {
+    content: attr(data-label);
+    font-weight: 600;
+    width: 40%;
+    min-width: 7.5rem;
+    color: var(--dark-blue);
+  }
+
+  .pagination {
+    gap: 0.25rem;
+  }
+
+  .pagination button {
+    padding: 0.375rem 0.75rem;
+    font-size: 0.813rem;
+  }
+
+  .tutorial-button {
+    top: 4rem;
+    right: 0.5rem;
+    padding: 0.375rem 0.75rem;
+    font-size: 0.813rem;
+  }
+}
+
+/* Small mobile styles */
+@media (max-width: 480px) {
+  .content-container {
+    padding: 0.75rem;
+  }
+
+  h1 {
+    font-size: 1.125rem;
+  }
+
+  td {
+    font-size: 0.75rem;
+  }
+
+  td::before {
+    min-width: 6rem;
+  }
+
+  .sort-select,
+  .page-size-select {
+    font-size: 0.75rem;
+    padding: 0.5rem;
+  }
+
+  .pagination button {
+    padding: 0.25rem 0.5rem;
+    font-size: 0.75rem;
+  }
+}
+
+/* Add these tutorial-related styles */
+.tutorial-button {
+    position: absolute;
+    top: 80px;
+    left: 20px;
+    background-color: transparent;
+    color: var(--medium-blue);
+    padding: 8px 12px;
+    border: 1px solid var(--medium-blue);
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 12px;
+    transition: all 0.3s ease;
+    z-index: 100;
+    margin-top: 10px;
+}
+
+.tutorial-button:hover {
+    background-color: rgba(59, 130, 246, 0.1);
+    transform: translateY(-1px);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Joyride customization */
+.__floater__body {
+    border-radius: 8px !important;
+    padding: 20px !important;
+}
+
+.__floater__arrow {
+    display: none !important;
+}
+
+/* Highlight active elements during tutorial */
+[data-rj-tutorial-highlighted] {
+    position: relative;
+    z-index: 999;
+}
+
+/* Update mobile styles */
+@media (max-width: 768px) {
+    .tutorial-button {
+        top: 70px;
+        left: 10px;
+        padding: 6px 10px;
+        font-size: 11px;
+    }
+}

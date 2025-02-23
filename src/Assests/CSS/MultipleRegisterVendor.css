@@ -1,0 +1,182 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+  position: relative;
+}
+
+.table-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  overflow-x: auto;
+  position: relative;
+  top: 130px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+th,
+td {
+  padding: 8px 10px;
+  text-align: left;
+  border: 1px solid #ddd;
+}
+
+th {
+  background-color: #000000;
+  font-weight: bold;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+  text-align: center;
+}
+
+tr:hover {
+  background-color: #f1f1f1;
+}
+
+.entry-row input {
+  width: 100%;
+  padding: 5px;
+  box-sizing: border-box;
+  margin: 0;
+}
+
+.header-bar {
+  color: rgb(0, 0, 0);
+  padding: 10px;
+  text-align: center;
+  font-size: 2.2em;
+  position: relative;
+  top: 10px;
+}
+
+.button-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px 0;
+  position: relative;
+  top: 100px;
+}
+
+#submitButton,
+#addRowButton {
+  width: 100%;
+  background-color: #0056b3;
+  color: white;
+  border: none;
+  padding: 15px;
+  font-size: 1em;
+  cursor: pointer;
+  text-align: center;
+  border-radius: 25px;
+  margin-top: 10px;
+}
+
+#addRowButton {
+  background-color: #4caf50;
+}
+
+#registeredVendors {
+  max-width: 1200px;
+  margin: 20px auto;
+  padding: 10px;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  display: none;
+}
+
+#registeredVendors table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+#registeredVendors th,
+#registeredVendors td {
+  padding: 10px;
+  border: 1px solid #ddd;
+}
+
+.delete-btn {
+  background-color: transparent;
+  color: #f44336;
+  border: none;
+  cursor: pointer;
+  font-size: 1.2em;
+  margin-left: 10px;
+}
+
+.delete-btn:hover {
+  color: #ff0000;
+}
+input::placeholder {
+  font-size: 15px !important;
+}
+@media screen and (max-width: 768px) {
+  th,
+  td {
+    padding: 6px 8px;
+    font-size: 15px;
+  }
+
+  .header-bar {
+    font-size: 1em;
+  }
+
+  #submitButton,
+  #addRowButton {
+    font-size: 0.9em;
+    padding: 12px;
+  }
+  .button-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0;
+    position: relative;
+    top: 0px !important;
+  }
+  input::placeholder {
+    font-size: 15px !important;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  th,
+  td {
+    padding: 4px 6px;
+    font-size: 0.8em;
+  }
+
+  .header-bar {
+    font-size: 0.9em;
+  }
+
+  #submitButton,
+  #addRowButton {
+    font-size: 0.8em;
+    padding: 10px;
+  }
+
+  .table-container {
+    padding-bottom: 40px;
+  }
+  .button-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0;
+    position: relative;
+    top: 0px;
+  }
+  input::placeholder {
+    font-size: 12px !important;
+  }
+}

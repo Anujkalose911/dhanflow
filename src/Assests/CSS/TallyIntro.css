@@ -1,0 +1,156 @@
+body {
+  height: 120vh !important;
+}
+.Tally-p {
+  display: flex;
+  margin: auto;
+  justify-content: center;
+  text-align: center;
+  font-size: 20px;
+  margin-top: 40px;
+  font-weight: bold;
+}
+
+.Tally-Download-Message {
+  display: flex;
+  margin: auto;
+  justify-content: center;
+  text-align: center;
+  font-size: 20px;
+  margin-top: 50px;
+  font-weight: bold;
+}
+
+.Tally-Download-Button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 400px;
+  margin-left: 570px;
+  margin-top: 50px;
+  border-radius: 20px;
+  height: 50px;
+  background-color: rgb(0, 179, 255);
+  color: #ffffff;
+  text-decoration: none !important;
+  font-size: 15px;
+  font-weight: bolder;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.Tally-Download-Button:hover {
+  background-color: rgb(255, 255, 255);
+  color: #000;
+  transition: ease-in-out 0.5s;
+}
+
+.Tally-Download-Button a {
+  text-decoration: none !important;
+}
+
+.Tally-video {
+  width: 800px !important;
+  height: 400px;
+  border-radius: 10px;
+  display: flex;
+  margin: auto;
+  margin-top: 50px;
+}
+
+.Tally-login {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 400px;
+  margin-left: 570px;
+  margin-top: 50px;
+  border-radius: 20px;
+  height: 50px;
+  background-color: rgb(0, 179, 255);
+  text-decoration: none !important;
+  font-size: 15px;
+  font-weight: bolder;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.Tally-login a:hover {
+  text-decoration: none;
+  color: #000000;
+}
+
+.Tally-login a {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.Tally-login:hover {
+  background-color: rgb(255, 255, 255);
+  color: #000000;
+  transition: ease-in-out 0.5s;
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+  .Tally-Download-Button {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    font-size: 14px;
+  }
+
+  .Tally-video {
+    max-width: 100%;
+    height: auto;
+  }
+
+  .Tally-login {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    font-size: 14px;
+  }
+
+  .Tally-p {
+    font-size: 16px;
+    margin-top: 30px;
+  }
+
+  .Tally-Download-Message {
+    font-size: 16px;
+    margin-top: 30px;
+  }
+}
+
+/* For very small mobile devices */
+@media (max-width: 480px) {
+  .Tally-Download-Button {
+    width: 90%;
+    font-size: 12px;
+    margin-top: 15px;
+  }
+
+  .Tally-video {
+    max-width: 100%;
+    height: auto;
+  }
+
+  .Tally-login {
+    width: 90%;
+    font-size: 12px;
+    margin-top: 15px;
+  }
+
+  .Tally-p {
+    font-size: 14px;
+    margin-top: 20px;
+  }
+
+  .Tally-Download-Message {
+    font-size: 14px;
+    margin-top: 20px;
+  }
+}

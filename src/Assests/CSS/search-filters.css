@@ -1,0 +1,166 @@
+.search-filters {
+  margin-bottom: 2rem;
+  background: white;
+  padding: 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.search-form {
+  margin-bottom: 1rem;
+}
+
+.search-input-container {
+  display: flex;
+  align-items: center;
+  background: white;
+  border-radius: 6px;
+  padding: 0.5rem 1rem;
+  border: 1px solid #e0e0e0;
+  position: relative;
+}
+
+.search-input {
+  border: none;
+  background: none;
+  padding: 0.5rem;
+  width: 100%;
+  margin-left: 0.5rem;
+  font-size: 0.95rem;
+}
+
+.search-input:focus {
+  outline: none;
+}
+
+.filter-container {
+  display: flex;
+  gap: 1.5rem;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.action-filter, .date-filter {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  position: relative;
+}
+
+.action-select {
+  padding: 0.5rem;
+  border-radius: 4px;
+  border: 1px solid #e0e0e0;
+  background: white;
+  min-width: 180px;
+  font-size: 0.95rem;
+  cursor: pointer;
+  padding-right: 2rem;
+}
+
+.action-select:focus {
+  outline: none;
+  border-color: #007bff;
+}
+
+.date-input {
+  padding: 0.5rem;
+  border-radius: 4px;
+  border: 1px solid #e0e0e0;
+  background: white;
+  font-size: 0.95rem;
+  cursor: pointer;
+}
+
+.date-input:focus {
+  outline: none;
+  border-color: #007bff;
+}
+
+.date-filter span {
+  color: #6c757d;
+}
+
+/* Clear buttons */
+.clear-search,
+.clear-action,
+.clear-dates {
+  cursor: pointer;
+  color: #6c757d;
+  transition: color 0.2s;
+  position: absolute;
+  right: 0.75rem;
+  background: white;
+  padding: 2px;
+  border-radius: 50%;
+}
+
+.clear-search:hover,
+.clear-action:hover,
+.clear-dates:hover {
+  color: #dc3545;
+}
+
+.clear-all-filters {
+  padding: 0.5rem 1rem;
+  background: #f8f9fa;
+  border: 1px solid #dee2e6;
+  border-radius: 4px;
+  color: #6c757d;
+  cursor: pointer;
+  font-size: 0.9rem;
+  transition: all 0.2s;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.clear-all-filters:hover {
+  background: #e9ecef;
+  color: #dc3545;
+}
+
+/* Icons */
+svg {
+  color: #6c757d;
+}
+
+/* Loading overlay */
+.loading-overlay {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+  background: rgba(255, 255, 255, 0.8);
+  border-radius: 8px;
+}
+
+@media (max-width: 320px) {
+  .filter-container {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 1rem;
+  }
+  
+  .action-filter, .date-filter {
+    width: 100%;
+  }
+
+  .action-select {
+    flex: 1;
+  }
+
+  .date-filter {
+    flex-wrap: wrap;
+  }
+
+  .date-input {
+    flex: 1;
+    min-width: 120px;
+  }
+
+  .clear-all-filters {
+    width: 100%;
+    justify-content: center;
+  }
+}

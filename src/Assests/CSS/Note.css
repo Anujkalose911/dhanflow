@@ -1,0 +1,19 @@
+.note {
+  margin: 20px 10px;
+  font-size: 14px;
+  color: var(--dark-blue);
+  background-color: var(--light-blue);
+  padding: 10px 15px;
+  border-radius: 8px;
+  display: inline-block;
+  max-width: 90%;
+  box-sizing: border-box;
+}
+
+@media (max-width: 768px) {
+.note {
+  font-size: 12px;
+  margin: 15px 5px;
+  padding: 8px 12px;
+}
+}
